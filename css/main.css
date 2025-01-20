@@ -2,17 +2,16 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: #f4d04e;
-  height: calc(100vh - 2rem);
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
-.main {
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 100%;
 }
-.main .container {
+main .container {
   margin: 2rem auto 1rem auto;
   max-width: 290px;
   display: flex;
@@ -23,48 +22,49 @@ body {
   background-color: #fff;
   box-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.8);
 }
-.main h4 {
+main .status {
   background: #f4d04e;
   padding: 0.2rem 0.5rem;
   width: fit-content;
   border-radius: 10%;
   font-size: 0.8em;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.main h3,
-.main p {
+main h3,
+main p {
   margin: 0.5rem 0;
   font-size: 15px;
 }
-.main .published {
+main .published {
   font-size: 13px;
 }
-.main p {
+main p {
   color: #777;
 }
-.main img {
+main img {
   border-radius: 0.5rem;
 }
-.main .author {
+main .author {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.main .author div {
+main .author div {
   margin-left: 0.5rem;
   font-size: 13px;
   font-weight: 600;
 }
-.main h3,
-.main h4,
-.main p {
+main h3,
+main h4,
+main p {
   margin: 0;
 }
-.main .attribution {
+main .attribution {
   font-size: 11px;
   text-align: center;
 }
-.main .attribution a {
+main .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
